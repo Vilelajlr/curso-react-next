@@ -76,16 +76,11 @@ export class Home extends Component {
           {filteredPosts.length === 0 && (
             <h1>Não existem posts relacionados</h1>
           )}
-
         </div>
        
-      
         {filteredPosts.length > 0 && (
           <Posts posts={filteredPosts} />
         )}
-
-        
-        
 
         <div className='button-container'>
           {!searchValue && (
